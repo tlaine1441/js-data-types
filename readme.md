@@ -1,5 +1,13 @@
 # Data Types, Variables, and Arrays
 
+[Hook]: <> (
+  - So one of the big jobs of a computer is to be a calculator.  So let's say I want to get my computer to multiply two big numbers like 24 and 24 together.  How could I do that?
+  - Now how about 32 and 32?
+  - What are we doing here?  (Squaring) So this is where variables come in.  Instead of writing all these numbers over and over again, the computer can save us time with: var side = 32; side*side;
+  - What if I want to make a cube?
+  - If time, how about a rectangle?
+  )
+
 ### Objectives
 *After this lesson, students will be able to:*
 
@@ -62,6 +70,13 @@ typeof('hi there') === 'string';
 
 `typeof()` returns a string with the type of the operand, or expression of the object you're looking at.  
 
+[CFU]: <> (Show of fingers for number, pull out string for string, hold up laptops for object...what type is...
+-"Hello!"
+-42
+-43.576
+-{color: red, size: big}
+-'Yellow'
+-"432")
 
 #### Numbers
 
