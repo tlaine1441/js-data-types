@@ -11,18 +11,20 @@
 ### Objectives
 *After this lesson, students will be able to:*
 
-- Describe the concept of a "data type" and how it relates to variables
-- Describe use cases of different "data types"
-- Declare, assign to, and manipulate data stored in a variable
-- Explore and use a programming or markup language's standard library and built-in functions (iterators, datatype/array methods)
-- Iterate over and and manipulate values in an array
-- Describe how arrays are used to store data
+- **Describe** the concept of a "data type" and how it relates to variables
+- **Describe** use cases of different "data types"
+- **Declare**, **assign** to, and **manipulate** data stored in a variable
+- **Explore** and **use** a programming or markup language's standard library and built-in functions (iterators, datatype/array methods)
+- **Iterate** over and **manipulate** values in an array
+- **Describe** how arrays are used to store data
 
 ### Preparation
 *Before this lesson, students should already be able to:*
 
 - Describe briefly what javascript is
 - Be comfortable with a text editor
+
+<!-- CFU: How do we feel about these two things? -->
 
 ## What is a data type? Intro (5 mins)
 
@@ -44,7 +46,7 @@ We'll elaborate on all of these - except Booleans - talk about how they differ i
 
 #### Working with data in JavaScript
 
-From the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction): "JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements...Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation."
+From the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction): "JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.... Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation."
 
 #### What are we working with? Demo (20 min)
 
@@ -303,6 +305,8 @@ JavaScript distinguishes between:
 - `null` a value that indicates a deliberate non-value
 - `undefined` indicates an uninitialized value — that is, a value that hasn't even been assigned yet
 
+<!-- CFU: Show-of-hands: which will you see more: null / undefined -->
+
 ## Variables and Keywords - Demo
 
 Variables are used to store data types into the memory of the computer so that they can be referenced later.
@@ -334,7 +338,7 @@ Having made some expressions it becomes evident we want to store these values.
 var myNumber = 1;
 // or also
 
-var myString = "Greetings y'all!"
+var myString = "Greetings y'all!";
 ```
 
 The main note to make here is that these variables should always have the `var` keyword and use `camelCase`
@@ -371,6 +375,8 @@ In Javascript we just discussed two types of values we can use. We call these va
 // but the following works
 1..toString()
 ```
+
+<!-- CFU And who remembers how to convert string to number? -->
 
 <!-- CFU Fist-to-five "How do we feel about Strings?  Numbers?  Their methods? -->
 
@@ -511,10 +517,10 @@ JavaScript arrays have several advanced _iterator methods_.
 
 Several of these methods require a function be supplied as an argument, and the code you write in the function will be applied to _each_ item in the array, individually.
 
-As an example, lets look at the `forEach` method that we can use instead of a `for` loop to iterate the elements:
+As an example, let's look at the `forEach` method that we can use instead of a `for` loop to iterate the elements:
 
 ```javascript
-var teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
+var teams = ['Bruins', 'Broncos', 'Ravens', 'Ducks'];
 teams.forEach(function(el) {
     console.log(el);
 });
