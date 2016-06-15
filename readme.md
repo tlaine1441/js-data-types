@@ -26,7 +26,7 @@
 
 <!-- CFU: How do we feel about these two things? -->
 
-## What is a data type? Intro (5 mins)
+## What is a data type? Intro (75 mins left)
 
 From the [Wikipedia](https://en.wikipedia.org/wiki/Data_type):
 
@@ -48,7 +48,7 @@ We'll elaborate on all of these - except Booleans - talk about how they differ i
 
 From the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction): "JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.... Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation."
 
-#### What are we working with? Demo (20 min)
+#### What are we working with? Demo (70 min left)
 
 For this lesson, we're going to use the Chrome Developer Tools Console shell.  Open a Chrome window and type `cmd+alt+j` to open the console.
 
@@ -87,7 +87,7 @@ In more low-level languages, numbers are divided into two classes or objects:
 * Integers
 
   ```javascript
-   ..., -1,0, 2, 3, 4, 5, ...
+   ..., -1,0, 1, 2, 3, 4, 5, ...
   ```
 
 * Floats (or Decimal numbers)
@@ -380,7 +380,7 @@ In Javascript we just discussed two types of values we can use. We call these va
 
 <!-- CFU Fist-to-five "How do we feel about Strings?  Numbers?  Their methods? -->
 
-## Arrays - Demo (5 mins)
+## Arrays - Demo (50 mins left)
 
 Unfortunately, strings and numbers are not enough for most programming purposes.
 What is needed are collections of data that we can use efficiently, Arrays.
@@ -421,7 +421,7 @@ friend.length
 ```
 
 
-## Working with Arrays - Demo (15 mins)
+## Working with Arrays - Demo (45 mins left)
 
 Using the JavaScript Keyword `new`, is one way of creating arrays:
 
@@ -500,7 +500,7 @@ Arrays come with a number of methods. Here's a list of some popular helpers:
 
 Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for different objects (like Math, Date, String, et c).
 
-## Iterating through an array - Demo (10 mins)
+## Iterating through an array - Demo (30 mins left)
 
 Iterating through the elements of an array, one at a time, is a very common practice in programming.
 
@@ -547,14 +547,14 @@ Here are some other iterator methods for you to research and practice with:
 
 
 
-## Independent Practice (15 minutes)
+## Independent Practice (20 minutes left)
 
 > ***Note:*** _This can be a pair programming activity or done independently._
 
 Take a look at the [starter-code](starter-code) and work through each exercise using the comments provided to console log the correct information.  
 
 
-## Conclusion (5 mins)
+## Conclusion (5 mins left)
 
 - Describe use cases of different "data types".
 - Why is iterating important when working with stored data?
