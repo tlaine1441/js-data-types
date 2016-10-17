@@ -1,5 +1,7 @@
 # Data Types, Variables, and Arrays
 
+<!--10:00 10 minutes -->
+
 <!-- HOOK
   - So one of the big jobs of a computer is to be a calculator.  So let's say I want to get my computer to multiply two big numbers like 24 and 24 together.  How could I do that?
   - Now how about 32 and 32?
@@ -21,14 +23,14 @@
 ### Preparation
 *Before this lesson, students should already be able to:*
 
-- Describe briefly what javascript is
-- Be comfortable with a text editor
+- **Describe** briefly what javascript is
+- **Be comfortable** with a text editor
 
-<!-- CFU: How do we feel about these two things? -->
+<!-- CFU: Fist-to-five? -->
 
-## What is a data type? Intro (75 mins left)
+## What is a data type? Intro
 
-From the [Wikipedia](https://en.wikipedia.org/wiki/Data_type):
+From [Wikipedia](https://en.wikipedia.org/wiki/Data_type):
 
 
 _In computer science and computer programming, a data type is a classification identifying one of various types of data that determines: the possible values for that type, the operations that can be done on values of that type, the meaning of the data and the way values of that type can be stored._
@@ -48,7 +50,9 @@ We'll elaborate on all of these - except Booleans - talk about how they differ i
 
 From the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction): "JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.... Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation."
 
-#### What are we working with? Demo (70 min left)
+<!--10:10 15 minutes -->
+
+#### What are we working with? Demo
 
 For this lesson, we're going to use the Chrome Developer Tools Console shell.  Open a Chrome window and type `cmd+alt+j` to open the console.
 
@@ -167,6 +171,14 @@ Math.floor(3.14)
 Math.floor(3.9999)
 => 3
 ```
+
+#### Challenge
+
+Try the following operations in your Chrome Developer tools:
+
+1. Show the solution of `(1 + 43) * 26 - (37 / 2)`
+2. Show the square root of `123456`
+3. Show a random number between 0 and 20
 
 #### Strings
 
@@ -380,10 +392,12 @@ In Javascript we just discussed two types of values we can use. We call these va
 
 <!-- CFU Fist-to-five "How do we feel about Strings?  Numbers?  Their methods? -->
 
-## Arrays - Demo (50 mins left)
+<!-- 10:25 5 minutes -->
+
+## Arrays - Demo
 
 Unfortunately, strings and numbers are not enough for most programming purposes.
-What is needed are collections of data that we can use efficiently, Arrays.
+What is needed are collections of data that we can use efficiently, like **Arrays**.
 
 Arrays are great for:
 
@@ -420,8 +434,8 @@ friend[0]
 friend.length
 ```
 
-
-## Working with Arrays - Demo (45 mins left)
+<!-- 10:30 10 minutes -->
+## Working with Arrays - Demo
 
 Using the JavaScript Keyword `new`, is one way of creating arrays:
 
@@ -500,7 +514,19 @@ Arrays come with a number of methods. Here's a list of some popular helpers:
 
 Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for different objects (like Math, Date, String, et c).
 
-## Iterating through an array - Demo (30 mins left)
+#### Challenge
+
+Try the following operations in your Chrome Developer tools:
+
+1. Create an array with the strings "Rick", "Morty", and "Jerry" inside.  Save this array as a variable.
+2. Show how many elements are inside the array.
+3. Reverse the array.
+4. Remove the last element from the array.
+5. Show the contents of the array.
+
+<!--10:40 5 minutes -->
+
+## Iterating through an array - Demo
 
 Iterating through the elements of an array, one at a time, is a very common practice in programming.
 
@@ -526,6 +552,8 @@ teams.forEach(function(el) {
 });
 ```
 
+<!-- CFU: What do you think will print out from this code? -->
+
 This function would return:
 
 ```javascript
@@ -545,16 +573,17 @@ Here are some other iterator methods for you to research and practice with:
 - `Array.filter()`
 - `Array.map()`
 
+<!--10:45 20 minutes -->
 
-
-## Independent Practice (20 minutes left)
+## Independent Practice
 
 > ***Note:*** _This can be a pair programming activity or done independently._
 
 Take a look at the [starter-code](starter-code) and work through each exercise using the comments provided to console log the correct information.  
 
+<!--11:05 5 minutes -->
 
-## Conclusion (5 mins left)
+## Conclusion
 
 - Describe use cases of different "data types".
 - Why is iterating important when working with stored data?
