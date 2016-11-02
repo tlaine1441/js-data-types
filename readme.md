@@ -50,7 +50,7 @@ We'll elaborate on all of these - except Booleans - talk about how they differ i
 
 From the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction): "JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.... Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation."
 
-<!--10:10 15 minutes -->
+<!--10:10 15 minutes REALLY?! 15 minutes, what was I thinking? this is 20-25 easy-->
 
 #### What are we working with? Demo
 
