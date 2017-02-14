@@ -1,6 +1,6 @@
 # Data Types, Variables, and Arrays
 
-<!--10:00 10 minutes -->
+<!--9:50 10 minutes -->
 
 <!-- HOOK
   - So one of the big jobs of a computer is to be a calculator.  So let's say I want to get my computer to multiply two big numbers like 24 and 24 together.  How could I do that?
@@ -50,7 +50,7 @@ We'll elaborate on all of these - except Booleans - talk about how they differ i
 
 From the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction): "JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.... Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation."
 
-<!--10:10 15 minutes REALLY?! 15 minutes, what was I thinking? this is 20-25 easy-->
+<!--10:00 <10 minutes-->
 
 #### What are we working with? Demo
 
@@ -100,19 +100,14 @@ In more low-level languages, numbers are divided into two classes or objects:
    2.718, 3.14, .5, .25, etc
   ```
 
-All numbers in JavaScript are **"double-precision 64-bit format IEEE 754 values"** - read this as "There's really no such thing as an integer in JavaScript."  You have to be a little careful with your arithmetic if you're used to math in other programming languages. Let's take a look at what happens when we do this:
-
-```javascript
-0.1 + 0.2
-=> 0.30000000000000004
-```
+All numbers in JavaScript are **"double-precision 64-bit format IEEE 754 values"** - read this as "There's really no such thing as an integer in JavaScript."
 
 In JavaScript, these data points are the same **type** of object, which it calls *Numbers*, so if you know floats and integers do not go looking for them.
 
 
 #### Arithmetic Operators
 
-Operators are used to work with data in JavaScript. The standard [arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators) - that you've been learning since grade school - are supported, including addition, subtraction, modulus (or remainder) arithmetic and so forth.  Check it out:
+Operators are used to work with data in JavaScript. The standard [arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators) - that you've been learning since grade school - are supported, including addition, subtraction, modulus (or remainder), and so forth.  Check it out:
 
 ```javascript
 1 + 2
@@ -172,6 +167,8 @@ Math.floor(3.9999)
 => 3
 ```
 
+<!--10:10 - 5 minutes -->
+
 #### Challenge
 
 Try the following operations in your Chrome Developer tools:
@@ -179,6 +176,8 @@ Try the following operations in your Chrome Developer tools:
 1. Show the solution of `(1 + 43) * 26 - (37 / 2)`
 2. Show the square root of `123456`
 3. Show a random number between 0 and 20
+
+<!-- 10:15 15 minutes -->
 
 #### Strings
 
@@ -275,18 +274,9 @@ parseFloat("1" + Math.PI);
 
 ```
 
-
-You can also use the unary `+` operator to convert string values to numbers:
-
-```javascript
-+"42";
-=> 42
-```
-
 #### NaN
 
-The `parseInt()` and `parseFloat()` functions parse a string until they reach a character that isn't valid for the specified number format, then return the number parsed up to that point. However the "+" operator simply converts the string to `NaN` if there is any invalid character in it.
-
+The `parseInt()` and `parseFloat()` functions parse a string until they reach a character that isn't valid for the specified number format, then return the number parsed up to that point.
 
 A special value called [`NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) (short for "Not a Number") is returned if the string is non-numeric:
 
@@ -308,7 +298,6 @@ You can test for `NaN` using the built-in [`isNaN()`](ttps://developer.mozilla.o
 isNaN(NaN);
 => true
 ```
-JavaScript's numeric operators are `+`, `-`, `*`, `/` and `%` and all work as you expect and should have practiced during your prework.
 
 #### Null and Undefined
 
@@ -353,7 +342,7 @@ var myNumber = 1;
 var myString = "Greetings y'all!";
 ```
 
-The main note to make here is that these variables should always have the `var` keyword and use `camelCase`
+It is worth reiterating that these variables should always have the `var` keyword and use `camelCase`
 
 #### Assignment Operators
 
@@ -367,7 +356,7 @@ x += 5
 => 6
 ```
 
-You can use `++` and `--` to increment and decrement, respectively. These can be used as prefix or postfix operators.
+You can use `++` and `--` to increment and decrement, respectively.
 
 In Javascript we just discussed two types of values we can use. We call these values objects, which for now just means that in addition to storing some data you also get to use some helpful methods when you are working with them.
 
@@ -392,7 +381,7 @@ In Javascript we just discussed two types of values we can use. We call these va
 
 <!-- CFU Fist-to-five "How do we feel about Strings?  Numbers?  Their methods? -->
 
-<!-- 10:25 5 minutes -->
+<!-- 10:30 5 minutes -->
 
 ## Arrays - Demo
 
@@ -434,35 +423,16 @@ friend[0]
 friend.length
 ```
 
-<!-- 10:30 10 minutes -->
+<!-- 10:35 5 minutes -->
 ## Working with Arrays - Demo
 
-Using the JavaScript Keyword `new`, is one way of creating arrays:
-
-```javascript
-var a = new Array();
-=> undefined
-
-a[0] = "dog";
-=> "dog"
-
-a[1] = "cat";
-=> "cat"
-
-a[2] = "hen";
-=> "hen"
-
-a
-=> ["dog", "cat", "hen"]
-
-a.length;
-=> 3
-```
-
-A more convenient notation is to use an array literal:
+Javascript arrays are usually created with an array literal:
 
 ```javascript
 var a = ["dog", "cat", "hen"];
+
+a[1];
+=> "cat"
 
 a.length;
 => 3
@@ -494,8 +464,6 @@ typeof a[90];
 => undefined
 ```
 
-<br>
-
 #### Array helper methods
 
 Arrays come with a number of methods. Here's a list of some popular helpers:
@@ -514,6 +482,8 @@ Arrays come with a number of methods. Here's a list of some popular helpers:
 
 Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for different objects (like Math, Date, String, et c).
 
+<!--10:40 5 minutes -->
+
 #### Challenge
 
 Try the following operations in your Chrome Developer tools:
@@ -524,7 +494,7 @@ Try the following operations in your Chrome Developer tools:
 4. Remove the last element from the array.
 5. Show the contents of the array.
 
-<!--10:40 5 minutes -->
+<!--10:45 5 minutes -->
 
 ## Iterating through an array - Demo
 
@@ -564,7 +534,7 @@ Ducks
 undefined
 ```
 
-Notice how much clearer this syntax is than that of the `for` loop?
+Notice how much cleaner this syntax is than that of the `for` loop?
 
 Here are some other iterator methods for you to research and practice with:
 
@@ -573,7 +543,7 @@ Here are some other iterator methods for you to research and practice with:
 - `Array.filter()`
 - `Array.map()`
 
-<!--10:45 20 minutes -->
+<!--10:50 20 minutes -->
 
 ## Independent Practice
 
@@ -581,7 +551,7 @@ Here are some other iterator methods for you to research and practice with:
 
 Take a look at the [starter-code](starter-code) and work through each exercise using the comments provided to console log the correct information.  
 
-<!--11:05 5 minutes -->
+<!--11:10 5 minutes -->
 
 ## Conclusion
 
