@@ -7,7 +7,6 @@
   - Now how about 32 and 32?
   - What are we doing here?  (Squaring) So this is where variables come in.  Instead of writing all these numbers over and over again, the computer can save us time with: var side = 32; side*side;
   - What if I want to make a cube?
-  - If time, how about a rectangle?
 -->
 
 ### Objectives
@@ -52,6 +51,8 @@ From the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/We
 
 <!--10:00 <10 minutes-->
 
+<!--Code-along -->
+
 #### What are we working with? Demo
 
 For this lesson, we're going to use the Chrome Developer Tools Console shell.  Open a Chrome window and type `cmd+alt+j` to open the console.
@@ -71,6 +72,8 @@ typeof('hi there') === 'string';
 => true
 
 ```
+
+<!--Half-mast -->
 
 `typeof()` returns a string with the type of the operand, or expression of the object you're looking at.  
 
@@ -177,7 +180,7 @@ Try the following operations in your Chrome Developer tools:
 2. Show the square root of `123456`
 3. Show a random number between 0 and 20
 
-<!-- 10:15 15 minutes -->
+<!-- 10:15 5 minutes -->
 
 #### Strings
 
@@ -274,6 +277,8 @@ parseFloat("1" + Math.PI);
 
 ```
 
+<!--10:20 5 minutes -->
+
 #### NaN
 
 The `parseInt()` and `parseFloat()` functions parse a string until they reach a character that isn't valid for the specified number format, then return the number parsed up to that point.
@@ -307,6 +312,8 @@ JavaScript distinguishes between:
 - `undefined` indicates an uninitialized value — that is, a value that hasn't even been assigned yet
 
 <!-- CFU: Show-of-hands: which will you see more: null / undefined -->
+
+<!--10:25 5 minutes -->
 
 ## Variables and Keywords - Demo
 
@@ -365,19 +372,9 @@ In Javascript we just discussed two types of values we can use. We call these va
 ```javascript
 (1).toString()
 => "1"
-/**
-  be careful though,
-  since numbers can be floats
-  javascript might
-  misunderstand you.
-*/
-1.toString()
-=> Float Error
-// but the following works
-1..toString()
 ```
 
-<!-- CFU And who remembers how to convert string to number? -->
+<!-- CFU And who remembers how to convert strings to numbers? -->
 
 <!-- CFU Fist-to-five "How do we feel about Strings?  Numbers?  Their methods? -->
 
@@ -411,16 +408,6 @@ var firstFriend = friends[0];
 // Get the last friend
 var lastFriend = friends[2]
 => 'Curly'
-```
-
-We can even use strings like arrays:
-
-```javascript
-var friend = "bobby bottleservice";
-// pick out first character
-friend[0]
-//=> 'b'
-friend.length
 ```
 
 <!-- 10:35 5 minutes -->
